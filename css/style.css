@@ -9,10 +9,19 @@
 body {
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: auto;
     justify-content: center;
     background: rgb(63,94,251);
     background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    position: relative;
+}
+
+.main {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 
 .card1 {
@@ -23,30 +32,37 @@ body {
     width: 400px;
     height: 600px;
     background-color: #0000005e;
+    position: relative;
+    margin: 1%;
     
 }   
 
 .titulo1 {
-    background-color: azure;
+    background-color: rgb(209, 83, 255);
     height: 100px;
     border-radius: 10px;
     width: 100%;
     text-align: center;
-    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
 }
 
 h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 25px;
-    font-size: 40px;
+    font-size: 30px;
 
 }
 .imagem {
     width: 350px;
     height: auto;
     margin-top: 20px;
-    position: absolute;
+    position: relative;
     margin-left: 10px;
+    overflow: hidden;
     
 }
 
@@ -56,9 +72,115 @@ h2{
 }
 
 .valor1 {
-    margin-top: 100%;
-    text-align: center;
-    background-color: azure;
+    background-color: rgb(209, 83, 255);
     height: 100px;
     border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-right: 10px;
+    
+    
+  }
+
+  .valor1 h2 {
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  .card1:hover  .titulo1 h2  {
+       font-size: 50px;
+  }
+
+  .card1 img {
+    transition: transform 0.3s ease-out;
+  }
+
+  .card1:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  .card1:hover  .valor1 h2  {
+    font-size: 35px;
+}
+
+#titulo2 {
+    background-color: rgb(134, 14, 210);
+    height: 100px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+#valor2 {
+    background-color: rgb(134, 14, 210);
+    height: 100px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-right: 10px;
+  }
+
+  #titulo3 {
+    background-color: #ff0;
+    height: 100px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    color: #00f;
+}
+
+#valor3 {
+    background-color: rgb(255, 255, 0);
+    height: 100px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    color: blue;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-right: 10px;
+  }
+
+  .card1:hover  .titulo1 h2  {
+    font-size: 50px;
+} 
+.card1:hover  #titulo2 h2  {
+    font-size: 50px;
+}  
+.card1:hover  #titulo3 h2  {
+    font-size: 50px;
+}
+
+.card1:hover  .valor1 h2  {
+    font-size: 35px;
+}
+.card1:hover  #valor2 h2  {
+    font-size: 35px;
+}
+.card1:hover  #valor3 h2  {
+    font-size: 35px;
 }
