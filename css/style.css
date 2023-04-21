@@ -7,13 +7,12 @@
 }
 
 body {
-    height: 100vh;
-    display: flex;
+    height: 100%;
+    display: block;
     align-items: auto;
     justify-content: center;
     background-color: #FFFFFF;
-background-image: linear-gradient(0deg, #c1cbff 0%, #6284FF 50%, #FF0000 100%);
-
+    background-image: linear-gradient(0deg, #c1cbff 0%, #6284FF 50%, #FF0000 100%);
     position: relative;
 }
 
@@ -23,6 +22,8 @@ background-image: linear-gradient(0deg, #c1cbff 0%, #6284FF 50%, #FF0000 100%);
     text-align: center;
     justify-content: center;
     display: flex;
+    padding-top: 100px;
+    
 }
 
 .card1 {
@@ -206,7 +207,6 @@ header {
     padding: 10px;
     margin-left: 100%;
     margin-top: 5px;
-    
 }
 
 nav {
@@ -249,4 +249,57 @@ nav ul {
 
   nav li {
     margin-left: 20px;
-  }
+  } 
+
+  footer{
+    bottom: 0;
+    position:sticky;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    background-color: #000000af;
+}
+
+footer a {
+  text-decoration: none;
+  margin: 1px;
+}
+
+span {
+  margin: 1px;
+}
+
+footer p{
+  display: flex;
+  margin-left:45%;
+  color: #fff;
+  font-size: 20px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #f00;
+  transition: color 0.3s ease-in-out;
+}
+
+#core {
+  margin-bottom: 1px;
+}
+
+.texto p{
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  font-size: 20px;
+}
+.texto {
+  justify-content: center;
+  text-align: justify;
+  max-width:60%;
+  margin-left: 20%;
+}
